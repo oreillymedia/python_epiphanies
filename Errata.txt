@@ -1,0 +1,11 @@
+Errata for Python Epiphanies: Exploring Fundamental Concepts
+
+These are also noted in the handout.
+
+There is an error in video segment "2.1 Back to the Basics: Names" at about 3 minutes and 25 seconds where I talk about line "IN [18]" as though it reads "a == b", checking for equality between a and b, instead of how it reads "id(a) == id(b)" which is checking that their ids are equal.
+
+In the video segment "5.2 Exercises: Functions" at about 1 minute 30 seconds at line "In [55]" the exercises and demo switch from calling f2 back to calling f without calling attention to that, which may be confusing if you don't notice it.
+
+In section "6.1 Decorators Simplified" the trace function at line "In [6]" has a small mistake so it only prints the first argument passed to the function.  The print statement should be this: print('Called {}{!r}'.format(f, args))
+
+In section "6.1 Decorators Simplified" the memoize function at line "In [21]" at about 8 minutes in would be a bit more clear without the parentheses in the format, i.e. like this instead: print('Called memoized_f{!r}'.format(args))
